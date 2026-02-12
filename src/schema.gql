@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  getRedis(key: String!): String
+}
+
+type Mutation {
+  setRedis(key: String!, value: String!): String!
+  deleteRedis(key: String!): Boolean!
+  setRedisWithTTL(key: String!, value: String!, ttl: Float!): String!
+}
+
+type Subscription {
+  redisUpdated: String!
+}
